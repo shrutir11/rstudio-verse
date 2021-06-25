@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build container:
+  build-container:
     name: Build Docker container image
     runs-on: ubuntu-latest
     steps:
