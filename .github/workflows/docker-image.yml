@@ -16,12 +16,12 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: ${{ github.repository }}/next
+          repository: ${{ github.repository }}/rstudio-verse
           tags: latest, ${{ github.run_number }}
       - name: Publish to Docker Hub
         uses: docker/build-push-action@v1
         with:
           username:  ${{ secrets.DOCKER_USERNAME }}
           password:  ${{ secrets.DOCKER_PASSWORD }}
-          repository: shrutir11/next
+          repository: shrutir11/rstudio-verse
           tags: latest, ${{ github.run_number }}
