@@ -16,7 +16,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: ${{ github.repository }}/3.5.0/latest
+          repository: ${{ github.repository }}/3.5.0
           tags: latest, ${{ github.run_number }}
       - name: Publish to Docker Hub
         uses: docker/build-push-action@v1
