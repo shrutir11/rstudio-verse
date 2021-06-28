@@ -35,4 +35,4 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-© 2021 GitHub, Inc.
+
