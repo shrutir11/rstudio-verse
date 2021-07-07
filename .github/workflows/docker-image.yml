@@ -32,6 +32,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/shrutir11/rstudio-verse:latest
+          path: rstudio-verse/latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
