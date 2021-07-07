@@ -28,10 +28,10 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: ./path/to/context
-          file: ./path/to/context/Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
-          tags: docker/image/rstudio-verse:latest
+          tags: latest
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
