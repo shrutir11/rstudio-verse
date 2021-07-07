@@ -31,7 +31,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rstudio-verse:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rstudio-verse:Dockerfile
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
