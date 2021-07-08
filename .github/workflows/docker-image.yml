@@ -58,7 +58,7 @@ jobs:
           path: 3.6.3
           Dockerfile: 3.6.3/Dockerfile
           push: true
-          tags: shrutir11/rstudio-verse:3.6.3 
+          tags: 3.6.3
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
