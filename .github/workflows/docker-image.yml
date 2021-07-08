@@ -26,12 +26,12 @@ jobs:
 
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
-          path: latest
-          dockerfile: latest/Dockerfile
+          context: latest
+          file: latest/Dockerfile
           push: true
-          tags: shrutir11/rstudio-verse
+          tags: shrutir11/rstudio-verse:latest
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
