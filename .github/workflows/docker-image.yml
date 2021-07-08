@@ -50,7 +50,7 @@ jobs:
           #file: 4.0.0-ubuntu18.04/Dockerfile
          # push: true
          # tags: shrutir11/rstudio-verse:4.0.0-ubuntu18.04
-      -
+      
         #name: Build and Push v3.6.3
         #id: docker_build_three_six_three
        # uses: docker/build-push-action@v2
