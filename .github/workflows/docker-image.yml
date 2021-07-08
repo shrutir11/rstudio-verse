@@ -31,7 +31,7 @@ jobs:
           path: latest
           dockerfile: latest/Dockerfile
           push: true
-          tags: shrutir11/rstudio-verse:latest
+          tags: latest
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
